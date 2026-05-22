@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import Header from "../components/layout/Header";
 import BottomNav from "../components/layout/BottomNav";
 import WeightageRow from "../components/subject/WeightageRow";
-import { assessments } from "../data/subjectData";
+import { subjectAssessments } from "../data/subjectData";
 import { curriculumSubjects } from "../data/curriculumData";
 
 export default function SubjectPage() {
@@ -15,8 +15,28 @@ export default function SubjectPage() {
     (s) => s.code === code
   );
 
-  const [assessmentData, setAssessmentData] =
-    useState(assessments);
+const storageKey = `subject-${code}`;
+
+const [assessmentData, setAssessmentData] =
+  useState(() => {
+
+    const savedData =
+      localStorage.getItem(storageKey);
+
+    return savedData
+      ? JSON.parse(savedData)
+      : subjectAssessments[code] || [];
+
+  });
+
+useEffect(() => {
+
+  localStorage.setItem(
+    storageKey,
+    JSON.stringify(assessmentData)
+  );
+
+}, [assessmentData, storageKey]);
 
   const weightedScore =
     assessmentData.reduce((total, item) => {

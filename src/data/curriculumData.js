@@ -4,7 +4,7 @@ export const curriculumSubjects = [
     code: "006237",
     type: "ELECTIVE",
     credits: 3,
-    grade: "A",
+    grade: 4.0,
     status: "IN PROGRESS",
   },
 
@@ -13,40 +13,43 @@ export const curriculumSubjects = [
     code: "004310",
     type: "CORE",
     credits: 3,
-    grade: "88%",
+    grade: 3.8,
     status: "IN PROGRESS",
   },
 
   {
-    title: "Math for Artificial Intelligence ",
+    title: "Math for Artificial Intelligence",
     code: "011499",
     type: "REQUIRED",
     credits: 3,
-    grade: "92%",
+    grade: 4.3,
     status: "IN PROGRESS",
   },
+
   {
     title: "Introduction to Data Analysis",
     code: "010142",
     type: "REQUIRED",
     credits: 3,
-    grade: "88%",
+    grade: 4.0,
     status: "IN PROGRESS",
   },
+
   {
     title: "Introduction to Open Source Software",
     code: "009957",
     type: "ELECTIVE",
     credits: 3,
-    grade: "90%",
-    status: "IN PROGRESS",
+    grade: 4.1,
+    status: "COMPLETED",
   },
+
   {
     title: "Data Structure and Lab",
     code: "009952",
-    type: "ELECTIVE",
+    type: "CORE",
     credits: 3,
-    grade: "98%",
-    status: "IN PROGRESS",
+    grade: 4.5,
+    status: "COMPLETED",
   },
 ];
