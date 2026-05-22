@@ -6,6 +6,7 @@ import SubjectPage from "./pages/SubjectPage";
 import TargetModelPage from "./pages/TargetModelPage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
+import CalculatorPage from "./pages/CalculatorPage";
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/target-model" element={<TargetModelPage />}/>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/calculator" element={<CalculatorPage />} />
 
     </Routes>
   );

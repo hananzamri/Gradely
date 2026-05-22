@@ -17,7 +17,7 @@ export default function BottomNav() {
     },
     {
       name: "Calculator",
-      path: "/subject",
+      path: "/calculator",
       icon: <FiPlusSquare size={20} />,
     },
     {
