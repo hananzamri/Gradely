@@ -235,7 +235,7 @@ export default function DashboardPage() {
           <div className="bg-white rounded-2xl border border-[#D9E3E8] p-6">
 
             <p className="text-sm uppercase tracking-widest text-gray-400">
-              Credits
+              Subjects
             </p>
 
             <h2 className="text-5xl font-bold mt-6 text-[#1F2933]">
